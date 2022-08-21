@@ -1,47 +1,11 @@
-<div id="paymentResponse" class="hidden">{{{ response }}}</div>
-<div id="clientKey" class="hidden">{{ clientKey }}</div>
+<div id="paymentResponse" class="hidden">{{{response}}}</div>
+<div id="clientKey" class="hidden">{{clientKey}}</div>
 
-<div style="padding-top: 8%">
-    <table class="table" align="center"  >
-        <tr align="center" vertical-align="">
-            <td>
-                <h4>Item</h4>
-            </td>
-            <td>
-                <h4>Description</h4>
-            </td>
-            <td>
-                <h4>Price</h4>
-            </td>
-        </tr>
-        <tr align="center">
-            <td>
-                <img width="130px" src="/images/RAM.jpg"/>
-            </td>
-            <td >
-                <p>Corsair DDR4 Vengeance RGB Pro SL 4x32GB 3200 Memory Module</p>
-            </td>
-            <td>
-                <p>$579 EUR</p>
-            </td>
-        </tr>
-        <tr align="center">
-            <td>
-                <h4>Total Price:</h4>
-            </td>
-            <td></td>
-            <td>
-                <h4>$579 EUR</h4>
-            </td>
-        </tr>
-    </table>
-</div>
-<hr/>
 <div align="center" style="padding-top:5%">
-    <h4>Payment Methods</h4>
+  <h4>Payment Methods</h4>
 </div>
 
 <div id="dropin"></div>
 
-{{!-- Adyen Component client code --}}
+{{! Adyen Component client code }}
 <script type="text/javascript" src="../implementation.js"></script>
