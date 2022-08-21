@@ -1,37 +1,49 @@
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-        <script src="https://checkoutshopper-live.adyen.com/checkoutshopper/sdk/3.15.1/adyen.js" integrity="sha384-18bB9irNIu0hQBFN+kxYgjeiMARTx7ukMoeFWLw/Autuyi+w0S9nXsf5Fn/VwmI+"
-            crossorigin="anonymous"></script>
+    <!-- Embed the Adyen Web script element above any other JavaScript in your checkout page. -->
+    <script
+      src="https://checkoutshopper-live.adyen.com/checkoutshopper/sdk/4.2.0/adyen.js"
+      integrity="sha384-SGA+BK9i1sG5N4BTCgRH6EGbopUK8WG/azn/TeIHYeBEXmEaB+NT+410Z9b1ii7Z"
+      crossorigin="anonymous"
+    ></script>
 
-        <link rel="stylesheet" href="https://checkoutshopper-live.adyen.com/checkoutshopper/sdk/3.15.1/adyen.css"
-            integrity="sha384-4ppagynsoxB4LNdDTdpX1No72EGOMm13+Y89hg+nz+dAIAWchOBTEnLL7u/hi6eM" crossorigin="anonymous" />
-        
-        <link rel="stylesheet" href="/styling.css">
+    <!-- Embed the Adyen Web stylesheet. You can add your own styling by overriding the rules in the CSS file -->
+    <link
+      rel="stylesheet"
+      href="https://checkoutshopper-live.adyen.com/checkoutshopper/sdk/4.2.0/adyen.css"
+      integrity="sha384-oT6lIQpTr+nOu+yFBPn8mSMkNQID9wuEoTw8lmg2bcrFoDu/Ae8DhJVj+T5cUmsM"
+      crossorigin="anonymous"
+    />
 
-        <title>Adyen Technical Assignment</title>
-    </head>
-    <body>
-        <header id="header">
-                <a href="/">
-                <img class="logo" src="/images/logo.png"/>
-                </a>
-                <p class="name">HIGH TECH CIRCLE SOLUTIONS</p>
-        </header>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <div class="container">
-            {{{body}}}
-        </div>
-    </body>
+    <link rel="stylesheet" href="/styling.css" />
 
+    <title>Adyen Technical Assignment</title>
+  </head>
+  <body>
+    <header id="header">
+      <a href="/">
+        <img class="logo" src="/images/logo.png" />
+      </a>
+      <p class="name">HIGH TECH CIRCLE SOLUTIONS</p>
+    </header>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="container">
+      {{{body}}}
+    </div>
+  </body>
 
 </html>
