@@ -41,7 +41,7 @@ app.get("/checkout", async (req, res) => {
   try {
     axios
       .post(
-        "https://checkout-test.adyen.com/v66/paymentMethods",
+        "https://checkout-test.adyen.com/v67/paymentMethods",
         {
           channel: "Web",
           merchantAccount: MERCHANT_ACCOUNT,
@@ -82,7 +82,7 @@ app.post("/api/initiatePayment", async (req, res) => {
     };
     //call the payment api url
     axios
-      .post("https://checkout-test.adyen.com/v66/payments", data, AxiosOptions)
+      .post("https://checkout-test.adyen.com/v67/payments", data, AxiosOptions)
       .then((response) => {
         const { action } = JSON.parse(JSON.stringify(response.data));
         //if there is additional action,get the orderRef from the response's payment data
@@ -116,7 +116,7 @@ app.all("/api/handleShopperRedirect", async (req, res) => {
   try {
     axios
       .post(
-        "https://checkout-test.adyen.com/v66/payments/details",
+        "https://checkout-test.adyen.com/v67/payments/details",
         payload,
         AxiosOptions
       )
@@ -157,7 +157,7 @@ app.post("/api/submitAdditionalDetails", async (req, res) => {
     // Return the response back to client (for further action handling or presenting result to shopper)
     axios
       .post(
-        "https://checkout-test.adyen.com/v66/payments/details",
+        "https://checkout-test.adyen.com/v67/payments/details",
         payload,
         AxiosOptions
       )
