@@ -33,7 +33,6 @@ app.engine(
     layoutsDir: __dirname + "/views/layouts",
   })
 );
-
 /* ################# API ENDPOINTS ###################### */
 
 //GETTING PAYMENT METHODS
@@ -46,7 +45,7 @@ app.get("/checkout", async (req, res) => {
           channel: "Web",
           merchantAccount: MERCHANT_ACCOUNT,
           countryCode: "NL",
-          amount: { currency: "EUR", value: 5000 },
+          amount: { currency: "EUR", value: 57900 },
         },
         AxiosOptions
       )
