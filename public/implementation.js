@@ -65,9 +65,6 @@ const configuration = {
     ideal: {
       showImage: true,
     },
-    AliPay: {
-      showImage: true,
-    },
   },
   onSubmit: (state, component) => {
     handleSubmission(state, component, "/api/initiatePayment");

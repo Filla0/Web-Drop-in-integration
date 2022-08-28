@@ -33,6 +33,7 @@ app.engine(
     layoutsDir: __dirname + "/views/layouts",
   })
 );
+
 /* ################# API ENDPOINTS ###################### */
 
 //GETTING PAYMENT METHODS
